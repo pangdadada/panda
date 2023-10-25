@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-3ce3fee2\",\"path\":\"/pages/05cc577fb51c7998/\",\"title\":\"flex布局案例-输入框布局\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"flex布局案例-输入框布局\",\"date\":\"2019-12-25T14:27:01.000Z\",\"permalink\":\"/pages/05cc577fb51c7998\",\"next\":\"/01.前端/40.学习笔记/00.md/\"},\"headers\":[],\"git\":{},\"filePathRelative\":\"02.页面/20.CSS/06.md\"}")

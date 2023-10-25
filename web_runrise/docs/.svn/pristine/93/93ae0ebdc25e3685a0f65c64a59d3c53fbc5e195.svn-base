@@ -1,0 +1,45 @@
+import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
+
+export default defineUserConfig({
+    base: '/docs/',
+    lang: 'zh-CN',
+    title: '远瑞创新云|AI慧办公|AI问政策',
+    description: '远瑞创新云|AI慧办公|AI问政策',
+    head: [['link', { rel: 'icon', href: 'https://vuejs.org/images/logo.png' }]],
+    theme: defaultTheme({
+        // 默认主题配置
+        editLink: true,
+        lastUpdated: true,
+        toggleSidebar: 'toggle Sidebar',
+        navbar: [
+          {
+            text: '远瑞创新云',
+            link: '/platform/',
+          },
+          {
+            text: 'AIGC应用集成',
+            children: ['AI微信客服','AI知识库'],
+          },
+        ],
+        // sidebar: [
+        //     // SidebarItem
+        //     {
+        //       text: 'Foo',
+        //       link: '/foo/',
+        //       children: [
+        //         // SidebarItem
+        //         {
+        //           text: 'github',
+        //           link: 'https://github.com',
+        //           children: [],
+        //         },
+        //         // 字符串 - 页面文件路径
+        //         '/foo/bar.md',
+        //       ],
+        //     },
+        //     // 字符串 - 页面文件路径
+        //     '/bar/README.md',
+        //   ],
+      }),
+})

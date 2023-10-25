@@ -1,0 +1,32 @@
+├── .vscode                         # 使用vscode编辑器后生成的配置文件
+├── node_modules             # 存放项目依赖的第三方模块
+├── public                            # 纯静态资源，该目录下的文件不会被webpack处理，该目录会被拷贝到输出
+│   ├── favicon.ico               # 网站的ico图标
+├── src                                  # 项目的代码目录
+│   ├── main.ts                     # webpack 的入口文件；
+│   ├── App.vue                   # APP页面入口
+│   ├── assets/                     # 共用的代码以外的资源，如：图片、图标、视频 等；
+│   ├── api/                          # 网络模块，如：接口；
+│   ├── router/                     # 路由模块
+│   ├── components/          # 共用的组件；； 这里的存放的组件应该都是展示组件
+│   └── views/                      # 存放项目业务代码
+│       ├── admin/             # 管理后台代码目录
+│       ├── office/            # AI慧办公代码目录
+│       ├── policy/            # AI（问政策、配需求、报项目）
+│       ├── IndexView.vue      # 首页框架页
+│       ├── HomeView.vue       # 用户前台框架页
+│       ├── AdminView.vue      # 管理后台框架页
+│       ├── MemberView.vue     # 中台（用户控制台）框架页
+根目录下；   
+       ├── .gitignore               # git的忽略配置文件
+       ├── env.d.ts                  # 类型声明文件，用于定义全局环境变量的类型
+       ├── index.html              # Vue应用的入口HTML文件
+       ├── package.json          # npm包配置文件，里面定义了项目的npm脚本，依赖包等信息
+       ├── postcss.config.js     # 
+       ├── README.md           # 项目信息文档
+       ├── tailwind.config.js    # TailwindCSS添加文件中所有模板文件的路径
+       ├── tsconfig.app.json    # TypeScript配置文件，用于配置应用程序的TypeScript编译选项
+       ├── tsconfig.json           # 配置整个Vue 3项目的TypeScript编译选项
+       ├── tsconfig.node.json  # 配置Node.js项目的TypeScript编译选项
+       ├── tsconfig.vitest.json  # 配置Vue 3项目在Vite开发服务器中的TypeScript编译选项
+       └── vite.config.ts           # 配置Vite开发服务器的行为和构建选项

@@ -1,0 +1,1 @@
+export const siteData = JSON.parse("{\"base\":\"/docs/\",\"lang\":\"zh-CN\",\"title\":\"\",\"description\":\"远瑞创新云|AI慧办公|AI问政策\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/images/favicon.ico\"}],[\"link\",{\"rel\":\"stylesheet\",\"href\":\"/custom.css\"}]],\"locales\":{}}")
