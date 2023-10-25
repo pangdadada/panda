@@ -1,18 +1,77 @@
-.navbar{
-    
+
+/* 导航栏高度 */
+:root{
+    --navbar-height:67px;
+  }
+  /* 设置导航栏底部实线，增加阴影效果 */
+  .navbar {
+    height: var(--navbar-height);
     border-bottom: 1px solid #dedede;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-items-wrapper {
-    left: 200px;
-}
-
-.navbar-items-wrapper .navbar-items .navbar-item:last-child { margin-left : 1000px}
+  }
+  /* 向右偏移 */
+  .navbar-items-wrapper {
+    left: 250px;
+  }
+  /* 字体颜色大小 */
+  .navbar .title,
+  .navbar-item {
+    font-size: 16px;
+    color: #004050;
+  }
+  /* 下拉列表的字体大小 */
+  .navbar-dropdown-item a{
+    font-size: 14px;
+  }
+  /* 下拉列表的边框阴影样式 */
+  .navbar-dropdown {
+    border-bottom: 1px solid #dedede;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  /* 导航栏每个导航项元素的左侧将会有20像素的空白间隙 */
+  .navbar-item{
+    margin-left: 20px;
+    /* 导航栏标题文字向下移动 */
+    margin-top: 2px;
+  }
  
- 
-  
-.navbar .title,
-.navbar-item {
-    color:#007bff
-}
+  /* 该选择器所匹配的元素将会占据其父元素的全部宽度 */
+  .navbar-items{
+    width: 100%;
+  }
+  /* 最后一个元素右浮动 */
+  .navbar-item:last-child{
+    float: right;
+  }
+  /* 导航栏中的第三个导航项元素将会有50像素的左侧空白间隔 */
+  .navbar-item:nth-child(3){
+    margin-left: 58px;
+  }
+  .navbar-item:nth-child(4){
+    margin-left: 35px;
+  }
+  /* 导航栏下拉菜单和悬停样式，背景颜色字体颜色，过度效果，持续时间0.3秒 */
+  .navbar-dropdown-wrapper .navbar-dropdown .navbar-dropdown-item a:hover{
+    background-color: #1A9EC1;
+    color: #ffffff;
+    transition: all .3s;
+  }
+  /* 设置导航栏项在鼠标悬停或处于活动状态时的样式 */
+  .navbar-items .navbar-item > a:hover, .navbar-items .navbar-item > a.router-link-active {
+    margin-bottom: 0px;
+    border: none;
+    color: #1A9EC1; 
+  }
+  .navbar .title:hover{
+    color: #1A9EC1;
+  }
+
+  .logo  {
+    margin-left: 16px; 
+    transform: scale(0.9);
+    /* width: 100px; /* 设置图片的宽度 
+    height: auto; 设置图片的高度，保持宽高比例 */
+  }
+  .navbar {
+    margin-left: -36px;
+  }
