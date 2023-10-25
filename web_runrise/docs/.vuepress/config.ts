@@ -35,14 +35,16 @@ export default defineUserConfig({
       docsDir:'docs',
         // repo: 'https://github.com/panda/blog',
         // repoLabel: 'Github',
-        editLink: true,
+        // editLink: true,
         editLinkText: '编辑',
-        editLinkPattern:':repo/panda/blog',
-         docsRepo:'https://github.com',
+        editLinkPattern:':repo',
+         docsRepo:'https://github.com/pangdadada/panda',
+        //  贡献者列表禁用
+         contributors: false,
 
         // lastUpdated: 'Last Updated',
-        // lastUpdatedText: '更新时间',
-        // lastUpdated: true,
+        lastUpdatedText: '更新时间',
+        lastUpdated: true,
 
         navbar: [
           {
